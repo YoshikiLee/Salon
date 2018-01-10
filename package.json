@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "bower install && gulp",
+    "servicein": "browser-sync start --server --files '**/*'^C",
     "jshint": "gulp jshint"
   },
   "repository": {

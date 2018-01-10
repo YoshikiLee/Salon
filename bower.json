@@ -28,7 +28,8 @@
     "morris.js": "morrisjs#^0.5.1",
     "datatables-responsive": "^2.2.1",
     "bootstrap-social": "^5.1.1",
-    "flot.tooltip": "^0.9.0"
+    "flot.tooltip": "^0.9.0",
+    "vue": "^2.5.13"
   },
   "resolutions": {
     "font-awesome": "~4.6.3"

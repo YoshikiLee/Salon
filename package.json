@@ -4,9 +4,8 @@
   "description": "salon member support",
   "main": "index.js",
   "scripts": {
-    "build": "bower install && gulp",
-    "servicein": "browser-sync start --server --files '**/*'^C",
-    "jshint": "gulp jshint"
+    "build": "bower install && gulp default",
+    "server": "gulp dev"
   },
   "repository": {
     "type": "git",

@@ -101,6 +101,9 @@ gulp.task('copy', function() {
     gulp.src(['bower_components/vue/dist/vue.js', 'bower_components/vue/dist/vue.min.js'])
         .pipe(gulp.dest('vendor/vue'))
 
+    gulp.src(['bower_components/particleground/jquery.particleground.js', 'bower_components/particleground/jquery.particleground.min.js'])
+        .pipe(gulp.dest('vendor/particleground'))
+
 })
 
 // Run everything

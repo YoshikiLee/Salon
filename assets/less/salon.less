@@ -4,7 +4,7 @@
 // Global Styles
 
 body {
-    background-color: @gray-lightest;
+    background-color: @white;
 }
 
 // Wrappers
@@ -24,7 +24,7 @@ body {
         position: inherit;
         margin: 0 0 0 250px;
         padding: 0 30px;
-        border-left: 1px solid darken(@gray-lightest, 6.5%);
+        border-left: 1px solid darken(@white, 6.5%);
     }
 }
 
@@ -104,7 +104,7 @@ body {
 }
 
 .sidebar ul li {
-    border-bottom: 1px solid darken(@gray-lightest, 6.5%);
+    border-bottom: 1px solid darken(@white, 6.5%);
     a {
         &.active {
             background-color: @gray-lighter;
@@ -271,7 +271,7 @@ table.dataTable thead .sorting:after {
     color: rgba(50,50,50,.5);
 }
 
-// Circle Buttons 
+// Circle Buttons
 
 .btn-circle {
     width: 30px;
@@ -545,4 +545,26 @@ table.dataTable thead .sorting:after {
         border-right-width: 14px;
         border-left-width: 0;
     }
+}
+
+//Login
+#particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+.panel {
+    background-color: transparent;
+}
+
+.panel-body {
+    padding-top: 30px;
+    background-color: rgba(2555,255,255,.3);
 }

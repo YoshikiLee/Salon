@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Salon Member Support</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- MetisMenu CSS -->
+  <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../dist/css/salon.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="login-panel panel panel-default" id="form-olvidado">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center">Sign In</h3>
+          </div>
+          <div class="panel-body">
+            <form accept-charset="UTF-8" role="form" id="login-form" method="post" role="form">
+              <fieldset>
+                <div class="form-group input-group">
+                  <span class="input-group-addon">@</span>
+                  <input class="form-control" placeholder="Email" name="email" type="email" required="" autofocus="">
+                </div>
+                <div class="form-group input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                  <input class="form-control" placeholder="Password" name="password" type="password" value="" required="">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block">Access</button>
+                  <p class="help-block"><a class="pull-right text-muted" href="#" id="olvidado"><small>Forgot your password?</small></a></p>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="login-panel panel panel-default" id="form-olvidado" style="display: none;">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center">Forgot your password?</h3>
+          </div>
+          <div class="panel-body">
+            <form accept-charset="UTF-8" role="form" id="login-recordar" method="post" role="form">
+              <fieldset>
+                <span class="help-block">Email address you use to log in to your account<br>We'll send you an email with instructions to choose a new password.</span>
+                <div class="form-group input-group">
+                  <span class="input-group-addon">@</span>
+                  <input class="form-control" placeholder="Email" name="email" type="email" required="">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" id="btn-olvidado">Continue</button>
+                <p class="help-block">
+                  <a class="pull-right text-muted" href="#" id="acceso"><small>Account Access</small></a>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="particles"></div>
+
+  <!-- jQuery -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Particle Ground JavaScript -->
+  <script src="../vendor/particleground/jquery.particleground.min.js"></script>
+
+  <!-- Metis Menu Plugin JavaScript -->
+  <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="../dist/js/salon.min.js"></script>
+
+</body>
+
+</html>

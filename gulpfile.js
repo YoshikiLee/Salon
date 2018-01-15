@@ -6,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var jshint = require('gulp-jshint');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -58,6 +59,13 @@ gulp.task('minify-js', ['js'], function() {
         .pipe(browserSync.reload({
             stream: true
         }))
+});
+
+// jslint
+gulp.task('jshint', function () {
+    return gulp.src(['assets/js/*.js'])
+            .pipe(jshint('.jshintrc'))
+            .pipe(jshint.reporter('jshint-stylish'))
 });
 
 // Copy vendor libraries from /bower_components into /vendor
@@ -119,7 +127,7 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'js', 'minify-js'], function() {
+gulp.task('dev', ['jshint', 'browserSync', 'less', 'minify-css', 'js', 'minify-js'], function() {
     gulp.watch('assets/less/*.less', ['less']);
     gulp.watch('assets/js/*.js', ['minify-js']);
     gulp.watch('dist/css/*.css', ['minify-css']);
